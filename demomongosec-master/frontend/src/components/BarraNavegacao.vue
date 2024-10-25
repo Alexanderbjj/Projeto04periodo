@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mb-3 p-3 bg">
+  <div class="mb-3 bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a href="/">
         <img src="@/assets/logo.png" alt="Logo" class="navbar-brand" />
@@ -41,8 +41,8 @@
             <router-link to="/sobre" class="nav-link">Sobre</router-link>
           </li>
         </ul>
-        <div class="deslogar">
-          <div class="log-user">{{ logado.login }}</div> | <button class="bot-deslogar" @click="desloga">Sair</button>
+        <div class="deslogar">Usuário |
+          <div class="log-user">{{ logado.login }}</div>  <button class="btn btn-danger bot-deslogar" @click="desloga">Sair</button>
         </div>
       </div>
     </nav>
@@ -71,11 +71,10 @@ export default {
 <style scoped>
 button {
   margin: 0 10px; /* Ajuste a margem conforme necessário */
-  box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.745) !important;
 }
 
 .navbar {
-  border-radius: 10px;
+  border-radius: 0px;
   font-size: 18px;
 }
 
@@ -99,17 +98,19 @@ button {
 
 .bot-deslogar {
   border-radius: 6px !important;
+  padding: 5px 20px;
 }
 
 .bot-deslogar:hover {
   border-radius: 6px !important;
-  background-color: rgb(254, 229, 2) !important;
+  background-color: rgb(110, 0, 0) !important;
 }
 
 .log-user {
-  font-weight: bold;
+  margin-left: 5px;
+  font-weight: 400;
   font-family: Helvetica;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 19px;
   color: rgb(17, 0, 255);
 }
