@@ -42,9 +42,9 @@ export default {
     data() {
         return {
             usuarios: [
-                { nome: 'Alexander', participacao: 'FrontEnd, Integração de sistema' },
-                { nome: 'Carlos', participacao: 'FrontEnd' },
-                { nome: 'Hebert', participacao: 'BackEnd' },
+                { nome: 'Alexander', participacao: 'BackEnd, Integração de sistema' },
+                { nome: 'Carlos', participacao: 'BackEnd' },
+                { nome: 'Arthur', participacao: 'FrontEnd' },
             ],
         };
     },
@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .card {
-    padding: 10px;
+    padding: 30px;
     /* Define o espaçamento interno */
 }
 </style>

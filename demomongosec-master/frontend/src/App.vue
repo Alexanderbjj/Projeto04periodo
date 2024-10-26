@@ -33,7 +33,8 @@
 
 body {
   background: rgb(14,0,255);
-  background: linear-gradient(90deg, rgba(0,164,255,1) 0%, rgba(14,0,255,1) 50%, rgba(0,164,255,1) 100%);
+ /* background: linear-gradient(90deg, rgba(0,164,255,1) 0%, rgba(14,0,255,1) 50%, rgba(0,164,255,1) 100%);*/
+  background: linear-gradient(90deg, rgb(11, 4, 116) 0%, rgb(36, 69, 252) 50%, rgb(11, 4, 116) 100%);
   height: 100%;
   width: 100%;
   
